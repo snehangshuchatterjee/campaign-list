@@ -1,0 +1,11 @@
+.active{
+    color: #00FF00;
+}
+
+.inactive{
+    color: #FF0000;
+}
+
+.activeStatusText{
+    margin-left: 5px;
+}

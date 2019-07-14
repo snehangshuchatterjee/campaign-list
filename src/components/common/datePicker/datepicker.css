@@ -1,0 +1,10 @@
+.react-datepicker-wrapper{
+    margin-left: 10px;
+}
+
+.datepickerClass{
+    min-height: 38px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding-left: 15px;
+}
