@@ -60,7 +60,6 @@ export class FilterComponent extends Component {
                 return new Date(item.endDate) < new Date(endDate);
             }));
         }
-        filteredData = filteredData ? filteredData : data;
         if (filteredName) {
             filteredData = filteredData.filter((item => {
                 return item.name.indexOf(filteredName) !== -1;

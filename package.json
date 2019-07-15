@@ -14,7 +14,8 @@
     "react-scripts": "3.0.1",
     "redux": "4.0.4",
     "redux-mock-store": "1.5.3",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "2.3.0",
+    "sinon": "7.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,7 +46,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!<rootDir>/node_modules/"
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/utils",
+      "!<rootDir>/src/constants"
     ],
     "coverageThreshold": {
       "global": {

@@ -9,7 +9,7 @@ const TableHeaderComponent = (props) => {
             <tr>
                 {headingKeys.map((heading) => {
                     return (
-                        <th>{headings[heading]}</th>
+                        <th key={heading}>{headings[heading]}</th>
                     );
                 })}
             </tr>
@@ -20,5 +20,5 @@ const TableHeaderComponent = (props) => {
 export default TableHeaderComponent;
 
 TableHeaderComponent.propTypes = {
-    headings: PropTypes.arrayOf(PropTypes.string)
+    headings: PropTypes.object
 }

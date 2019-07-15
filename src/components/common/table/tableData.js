@@ -22,6 +22,7 @@ const TableDataComponent = (props) => {
                     <TableDataItemComponent headings={headings}
                         isActive={active}
                         data={dataItem}
+                        key={dataItem}
                     />
                 );
             })}
@@ -32,6 +33,6 @@ const TableDataComponent = (props) => {
 export default TableDataComponent;
 
 TableDataComponent.propTypes = {
-    headings: PropTypes.arrayOf(PropTypes.string),
+    headings: PropTypes.object,
     data: PropTypes.arrayOf(PropTypes.object)
 }

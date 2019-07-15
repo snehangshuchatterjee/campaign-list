@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
     });
 }
 
-export class MainComponent extends Component {
+class MainComponent extends Component {
     render = () => {
         return (
             <div className="App">

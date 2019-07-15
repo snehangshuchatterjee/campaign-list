@@ -5,20 +5,20 @@ import ActiveStatusComponent from '../activeStatus';
 const TableDataItemComponent = (props) => {
     const { headings, data, isActive } = props;
     const dataHeadingKeys = Object.keys(headings);
-    console.log(JSON.stringify(data));
+
     return (
         <tr>
             {dataHeadingKeys.map((heading) => {
                 if (heading === 'active') {
                     return (
-                        <td>
+                        <td key={heading}>
                             <ActiveStatusComponent isActive={isActive} />
                         </td>
                     );
                 }
                 else {
                     return (
-                        <td>{data[heading] ? data[heading] : ""}</td>
+                        <td key={heading}>{data[heading] ? data[heading] : ""}</td>
                     );
                 }
             })}
@@ -29,6 +29,7 @@ const TableDataItemComponent = (props) => {
 export default TableDataItemComponent;
 
 TableDataItemComponent.propTypes = {
-    headings: PropTypes.arrayOf(PropTypes.string),
-    data: PropTypes.object
+    headings: PropTypes.object,
+    data: PropTypes.object,
+    isActive: PropTypes.bool.isRequired
 }

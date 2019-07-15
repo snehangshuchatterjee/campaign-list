@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table } from "react-bootstrap";
+import PropTypes from 'prop-types';
 
 import TableHeaderComponent from './tableHeader';
 import TableDataComponent from './tableData';
@@ -23,3 +24,7 @@ const TableComponent = (props) => {
 }
 
 export default TableComponent;
+
+TableComponent.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.object)
+}
