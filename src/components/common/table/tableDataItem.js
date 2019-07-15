@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ActiveStatusComponent from '../activeStatus';
 
+import { abbreviateNumber } from "../../../utils/mathUtils";
+
+
 const TableDataItemComponent = (props) => {
     const { headings, data, isActive } = props;
     const dataHeadingKeys = Object.keys(headings);
@@ -14,6 +17,13 @@ const TableDataItemComponent = (props) => {
                         <td key={heading}>
                             <ActiveStatusComponent isActive={isActive} />
                         </td>
+                    );
+                }
+                else if (heading === 'Budget') {
+                    let finalBudget = abbreviateNumber(data[heading]);
+
+                    return (
+                        <td key={heading}>{finalBudget + " USD"}</td>
                     );
                 }
                 else {

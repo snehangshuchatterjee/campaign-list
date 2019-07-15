@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import uuid from 'uuid';
 
 import TableDataItemComponent from './tableDataItem';
 
@@ -22,7 +23,7 @@ const TableDataComponent = (props) => {
                     <TableDataItemComponent headings={headings}
                         isActive={active}
                         data={dataItem}
-                        key={dataItem}
+                        key={uuid.v4()}
                     />
                 );
             })}

@@ -13,7 +13,8 @@ describe("Table Data Item Component", () => {
         data = {
             "a": "sjh",
             "b": "shjkd",
-            "c": "sjh"
+            "c": "sjh",
+            "Budget": 123456
         };
         isActive = true;
         wrapper = shallow(<TableDataItemComponent headings={headings}
@@ -28,7 +29,8 @@ describe("Table Data Item Component", () => {
 
     it("should display 'ActiveStatusComponent' if the headings contain 'Active'", () => {
         let data = {
-            name: "test"
+            name: "test",
+            "Budget": 123456
         }
         wrapper = shallow(<TableDataItemComponent headings={headings}
             data={data}
