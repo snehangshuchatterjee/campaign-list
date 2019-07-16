@@ -13,8 +13,11 @@ const ButtonComponent = (props) => {
             }}
             className="searchButton"
         >
-            <i className="fa fa-search searchIcon" aria-hidden="true"></i>
-            <span className="searchText">Search</span>
+            <span className="buttonText">
+                <i className="fa fa-search searchIcon" aria-hidden="true"></i>
+                <span className="searchText">Search</span>
+            </span>
+
         </Button>
     );
 }

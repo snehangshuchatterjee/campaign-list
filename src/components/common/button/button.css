@@ -4,6 +4,15 @@
     width: 200px;
     text-align: center;
 }
+.buttonText{
+    margin: auto;
+    left: -5px;
+    position: relative;
+}
+
+.autoMargin{
+    left: 35px;
+}
 
 .searchIcon{
     color: #FFFFFF;
