@@ -16,7 +16,7 @@ describe("Filter Body Component", () => {
         it("should render the component properly without crashing", () => {
             expect(wrapper.find(Container).length).toEqual(1);
             expect(wrapper.find(Row).length).toEqual(1);
-            expect(wrapper.find(Col).length).toEqual(4);
+            expect(wrapper.find(Col).length).toEqual(3);
         })
     });
 });

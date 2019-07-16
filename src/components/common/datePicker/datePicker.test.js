@@ -27,12 +27,6 @@ describe("Filter Body Component", () => {
             wrapper.instance().handleChangeStart(inputDate);
             expect(wrapper.state().startDate).toEqual(inputDate);
         });
-        // it("should call the 'handleStartDateChange' method from the props", () => {
-
-        //     console.log(wrapper.props());
-        //     wrapper.instance().handleChangeStart(inputDate);
-        //     expect(startDataChange).toHaveBeenCalled();
-        // });
     });
     describe("handleChangeEnd", () => {
         it("should set the input date to the state as end date", () => {

@@ -4,6 +4,7 @@ import SearchBoxComponent from '../common/searchBox';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './filter.css';
+import ButtonComponent from '../common/button';
 
 const FilterBodyComponent = (props) => {
     const {
@@ -17,18 +18,17 @@ const FilterBodyComponent = (props) => {
         <>
             <Container>
                 <Row className="rowPadding">
-                    <Col xs={6} className="autoMargin">
-                        <DatePickerComponent handleStartDateChange={handleStartDateChange} 
+                    <Col xs={8} className="autoMargin">
+                        <DatePickerComponent handleStartDateChange={handleStartDateChange}
                             handleEndDateChange={handleEndDateChange}
                         />
-                    </Col>
-                    <Col xs={1} ></Col>
-                    <Col xs={3} className="autoMargin">
                         <SearchBoxComponent handleNameChange={handleNameChange}
-                            handleButtonClick={handleButtonClick}
                         />
                     </Col>
-                    <Col xs={1} ></Col>
+                    <Col xs={2} className="autoMargin">
+                        <ButtonComponent handleButtonClick={handleButtonClick} />
+                    </Col>
+                    <Col xs={2} ></Col>
                 </Row>
             </Container>
         </>

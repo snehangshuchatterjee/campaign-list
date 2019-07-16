@@ -47,8 +47,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.js",
       "!<rootDir>/node_modules/",
-      "!<rootDir>/src/utils",
+      "!src/utils/sampleData.js",
       "!<rootDir>/src/constants"
     ],
     "coverageThreshold": {

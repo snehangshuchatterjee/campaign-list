@@ -29,4 +29,14 @@ describe("Table Data Component", () => {
         const wrapper = shallow(<TableDataComponent headings={TABLE_HEADINGS} data={data} />);
         expect(wrapper.find(TableDataItemComponent).props().isActive).toEqual(true);
     });
+
+    it("should return an empty component if start date is after end date", () => {
+        let data = [
+            {
+                "id": 1, "name": "Divavu", "startDate": "9/19/2019", "endDate": "12/9/2018", "Budget": 88377
+            }
+        ];
+        const wrapper = shallow(<TableDataComponent headings={TABLE_HEADINGS} data={data} />);
+        expect(wrapper.find(TableDataItemComponent).length).toEqual(0);
+    });
 });

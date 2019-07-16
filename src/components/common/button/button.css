@@ -1,0 +1,25 @@
+.searchButton{
+    background-color: rgb(5, 162, 235);
+    min-width: 25%;
+    width: 200px;
+    text-align: center;
+}
+
+.searchIcon{
+    color: #FFFFFF;
+}
+
+.searchText{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.input-group{
+    width: auto;
+    float: right;
+}
+
+.input-group>.form-control{
+    display: inline-block;
+    width: auto;
+}

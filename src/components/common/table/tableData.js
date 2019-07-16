@@ -18,6 +18,10 @@ const TableDataComponent = (props) => {
     return (
         <tbody>
             {data.map((dataItem) => {
+                const { startDate, endDate } = dataItem
+                if (new Date(startDate) > new Date(endDate)) {
+                    return null;
+                }
                 let active = isActive(dataItem);
                 return (
                     <TableDataItemComponent headings={headings}
