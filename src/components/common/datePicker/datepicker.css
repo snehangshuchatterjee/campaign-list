@@ -1,5 +1,9 @@
 .react-datepicker-wrapper{
-    margin-left: 40px;
+    width: inherit;
+}
+
+.react-datepicker__input-container{
+    width: inherit;
 }
 
 .datepickerClass{
@@ -7,4 +11,5 @@
     border: 1px solid #ced4da;
     border-radius: .25rem;
     padding-left: 15px;
+    width: inherit;
 }

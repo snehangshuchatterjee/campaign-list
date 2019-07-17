@@ -18,18 +18,25 @@ const FilterBodyComponent = (props) => {
         <>
             <Container>
                 <Row className="rowPadding">
-                    <Col xs={8} className="autoMargin">
+                    <Col sm={12} md={6}>
                         <DatePickerComponent handleStartDateChange={handleStartDateChange}
                             handleEndDateChange={handleEndDateChange}
                         />
-                        <SearchBoxComponent handleNameChange={handleNameChange}
-                        />
+
                     </Col>
-                    <Col xs={2} className="autoMargin">
+                    <Col sm={12} md={3}>
+                        <SearchBoxComponent handleNameChange={handleNameChange} />
+                    </Col>
+                    <Col sm={12} md={3}>
                         <ButtonComponent handleButtonClick={handleButtonClick} />
                     </Col>
-                    <Col xs={2} ></Col>
                 </Row>
+             
+                {/* <Row className="rowPadding">
+                    <Col xs={12} md={12} className="autoMargin">
+                        <ButtonComponent handleButtonClick={handleButtonClick} />
+                    </Col>
+                </Row> */}
             </Container>
         </>
     );
